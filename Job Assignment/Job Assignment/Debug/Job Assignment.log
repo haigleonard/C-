@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  Job Assignment.cpp
+c:\users\haig\source\repos\job assignment\job assignment\job assignment.cpp(73): warning C4240: nonstandard extension used: access to 'dataBase2::IDandAction' now defined to be 'public', previously it was defined to be 'private'
+  c:\users\haig\source\repos\job assignment\job assignment\job assignment.cpp(15): note: see declaration of 'dataBase2::IDandAction'
+c:\users\haig\source\repos\job assignment\job assignment\job assignment.cpp(48): warning C4018: '<': signed/unsigned mismatch
+  Job Assignment.vcxproj -> C:\Users\Haig\source\repos\Job Assignment\Debug\Job Assignment.exe

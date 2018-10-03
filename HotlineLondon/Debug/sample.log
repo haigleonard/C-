@@ -1,0 +1,30 @@
+﻿  Main.cpp
+g:\computer science\github\projects\hotlinelondon\map.h(52): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+g:\computer science\github\projects\hotlinelondon\player.h(16): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\player.h(17): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\player.h(23): warning C4305: '+=': truncation from 'double' to 'float'
+g:\computer science\github\projects\hotlinelondon\player.h(29): warning C4305: '-=': truncation from 'double' to 'float'
+g:\computer science\github\projects\hotlinelondon\player.h(35): warning C4305: '-=': truncation from 'double' to 'float'
+g:\computer science\github\projects\hotlinelondon\player.h(40): warning C4305: '-=': truncation from 'double' to 'float'
+g:\computer science\github\projects\hotlinelondon\police.h(21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\police.h(22): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\police.h(40): warning C4305: '+=': truncation from 'double' to 'float'
+g:\computer science\github\projects\hotlinelondon\police.h(46): warning C4305: '-=': truncation from 'double' to 'float'
+g:\computer science\github\projects\hotlinelondon\police.h(52): warning C4305: '-=': truncation from 'double' to 'float'
+g:\computer science\github\projects\hotlinelondon\police.h(57): warning C4305: '-=': truncation from 'double' to 'float'
+g:\computer science\github\projects\hotlinelondon\police.h(82): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+g:\computer science\github\projects\hotlinelondon\police.h(85): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\police.h(86): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(180): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(181): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(183): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(184): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(186): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(187): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(189): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(190): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(195): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(196): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(197): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+g:\computer science\github\projects\hotlinelondon\main.cpp(198): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+  sample.vcxproj -> G:\Computer Science\GitHub\Projects\HotlineLondon\Debug\sample.exe

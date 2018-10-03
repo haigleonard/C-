@@ -1,0 +1,119 @@
+Total number of actions per website:
+ * barclays  : 87
+ * bbc       : 88
+ * be        : 78
+ * nissan    : 19
+
+20 most frequent actions:
+ * 38  entrylist_00
+ * 26  entrylist_02
+ * 24  entry_11
+ * 23  entry_07
+ * 22  entrylist_01
+ * 17  entry_02
+ * 16  entry_10
+ * 15  entry_03
+ * 12  entry_09
+ * 11  entry_01
+ * 10  entry_08
+ * 10  entry_13
+ *  9  entry_04
+ *  9  entry_16
+ *  7  entry_00
+ *  7  entry_14
+ *  6  redirect
+ *  4  entry_05
+ *  3  login
+ *  1  entry_06
+
+Mean number of actions in a session per website:
+ * barclays  : 14.50
+ * bbc       : 14.67
+ * be        : 13.00
+ * nissan    : 9.50
+
+20 most frequent sequences per website:
+ * barclays  : 11 ['entrylist_00']
+ * barclays  :  9 ['entry_09']
+ * barclays  :  9 ['entrylist_02']
+ * barclays  :  8 ['entrylist_01']
+ * barclays  :  7 ['entry_03']
+ * barclays  :  6 ['entry_02']
+ * barclays  :  6 ['entry_10']
+ * barclays  :  5 ['entry_11']
+ * barclays  :  4 ['entry_10', 'entry_13']
+ * barclays  :  4 ['entrylist_02', 'entrylist_00']
+ * barclays  :  4 ['entry_01']
+ * barclays  :  4 ['entry_08']
+ * barclays  :  4 ['entry_13']
+ * barclays  :  4 ['entry_14']
+ * barclays  :  3 ['entry_03', 'entry_09']
+ * barclays  :  3 ['entrylist_01', 'entry_09']
+ * barclays  :  2 ['entrylist_02', 'entrylist_00', 'entry_03']
+ * barclays  :  2 ['login', 'entrylist_01', 'entry_09']
+ * barclays  :  2 ['entry_01', 'entrylist_00']
+ * barclays  :  2 ['entry_02', 'entry_14']
+
+ * bbc       : 14 ['entrylist_00']
+ * bbc       : 10 ['entrylist_02']
+ * bbc       :  9 ['entry_07']
+ * bbc       :  9 ['entry_11']
+ * bbc       :  8 ['entry_02']
+ * bbc       :  5 ['entrylist_02', 'entrylist_00']
+ * bbc       :  5 ['entry_03']
+ * bbc       :  5 ['entry_04']
+ * bbc       :  4 ['entry_01']
+ * bbc       :  4 ['entry_16']
+ * bbc       :  3 ['entry_02', 'entry_11']
+ * bbc       :  3 ['entry_10', 'entry_07']
+ * bbc       :  3 ['entry_11', 'entrylist_02']
+ * bbc       :  3 ['entrylist_00', 'entry_04']
+ * bbc       :  3 ['entry_10']
+ * bbc       :  3 ['entrylist_01']
+ * bbc       :  2 ['entrylist_00', 'entry_03', 'entry_02', 'entry_11']
+ * bbc       :  2 ['entry_03', 'entry_02', 'entry_11']
+ * bbc       :  2 ['entry_11', 'entrylist_02', 'entrylist_00']
+ * bbc       :  2 ['entry_16', 'entry_10', 'entry_07']
+
+ * be        :  9 ['entry_07']
+ * be        :  9 ['entry_11']
+ * be        :  9 ['entrylist_00']
+ * be        :  9 ['entrylist_01']
+ * be        :  6 ['entry_10']
+ * be        :  6 ['entrylist_02']
+ * be        :  4 ['entry_11', 'entry_10']
+ * be        :  4 ['entry_13']
+ * be        :  4 ['entry_16']
+ * be        :  3 ['entry_11', 'entry_10', 'entry_07']
+ * be        :  3 ['entry_07', 'entry_08']
+ * be        :  3 ['entry_07', 'entrylist_01']
+ * be        :  3 ['entry_10', 'entry_07']
+ * be        :  3 ['entry_01']
+ * be        :  3 ['entry_02']
+ * be        :  3 ['entry_03']
+ * be        :  3 ['entry_08']
+ * be        :  3 ['entry_09']
+ * be        :  2 ['entry_07', 'entry_11', 'entry_10', 'entry_07', 'entrylist_01']
+ * be        :  2 ['entry_07', 'entry_11', 'entry_10', 'entry_07']
+
+ * nissan    :  4 ['entrylist_00']
+ * nissan    :  3 ['entry_00']
+ * nissan    :  3 ['entry_07']
+ * nissan    :  2 ['entrylist_00', 'entry_04']
+ * nissan    :  2 ['entry_04']
+ * nissan    :  2 ['entrylist_01']
+ * nissan    :  1 ['entrylist_01', 'entrylist_02', 'entrylist_00', 'entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00', 'entry_00', 'entry_00']
+ * nissan    :  1 ['entrylist_01', 'entrylist_02', 'entrylist_00', 'entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00', 'entry_00']
+ * nissan    :  1 ['entrylist_02', 'entrylist_00', 'entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00', 'entry_00', 'entry_00']
+ * nissan    :  1 ['entrylist_00', 'entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00', 'entry_00', 'entry_00']
+ * nissan    :  1 ['entrylist_01', 'entrylist_02', 'entrylist_00', 'entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00']
+ * nissan    :  1 ['entrylist_02', 'entrylist_00', 'entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00', 'entry_00']
+ * nissan    :  1 ['entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00', 'entry_00', 'entry_00']
+ * nissan    :  1 ['entrylist_00', 'entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00', 'entry_00']
+ * nissan    :  1 ['entrylist_01', 'entrylist_02', 'entrylist_00', 'entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00']
+ * nissan    :  1 ['entrylist_02', 'entrylist_00', 'entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00']
+ * nissan    :  1 ['redirect', 'entrylist_01', 'entry_07', 'entry_08', 'entry_11', 'entry_10', 'entry_07', 'entry_07']
+ * nissan    :  1 ['entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00', 'entry_00', 'entry_00']
+ * nissan    :  1 ['entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00', 'entry_00']
+ * nissan    :  1 ['entrylist_00', 'entry_04', 'entry_00', 'entrylist_00', 'entry_04', 'entrylist_00', 'entrylist_00']
+

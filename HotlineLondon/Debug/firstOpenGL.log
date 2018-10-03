@@ -1,0 +1,17 @@
+﻿Build started 4/6/2016 5:47:54 PM.
+     1>Project "C:\Users\Haig\Downloads\Haig's work\Graphics\fontsexamplecode_2016\GLFONT_fonts\firstOpenGL.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt glfont2.cpp template.cpp
+         template.cpp
+         glfont2.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Haig\Downloads\Haig's work\Graphics\fontsexamplecode_2016\GLFONT_fonts\Debug\firstOpenGL.exe" /INCREMENTAL /NOLOGO glu32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Haig\Downloads\Haig's work\Graphics\fontsexamplecode_2016\GLFONT_fonts\Debug\firstOpenGL.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"C:\Users\Haig\Downloads\Haig's work\Graphics\fontsexamplecode_2016\GLFONT_fonts\Debug\firstOpenGL.lib" /MACHINE:X86 /SAFESEH Debug\glfont2.obj
+         Debug\template.obj
+     1>glfont2.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         firstOpenGL.vcxproj -> C:\Users\Haig\Downloads\Haig's work\Graphics\fontsexamplecode_2016\GLFONT_fonts\Debug\firstOpenGL.exe
+     1>Done Building Project "C:\Users\Haig\Downloads\Haig's work\Graphics\fontsexamplecode_2016\GLFONT_fonts\firstOpenGL.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.57
