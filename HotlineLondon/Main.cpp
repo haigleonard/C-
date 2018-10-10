@@ -67,41 +67,42 @@ void init()
 	policeobb.setID("Police");
 	policeobbBack.setID("PoliceBack");
 	Buildings.setID("Building");
-	obbplayer.vertOriginal[0].x = -2;
-	obbplayer.vertOriginal[0].y = -2;
+	
+	obbplayer.vertOriginal[0].x = player.vertOriginal[0];
+	obbplayer.vertOriginal[0].y = player.vertOriginal[1];
 
-	obbplayer.vertOriginal[1].x = -2;
-	obbplayer.vertOriginal[1].y = 2;
+	obbplayer.vertOriginal[1].x = player.vertOriginal[2];
+	obbplayer.vertOriginal[1].y = player.vertOriginal[3];
 
-	obbplayer.vertOriginal[2].x = 2;
-	obbplayer.vertOriginal[2].y = 2;
+	obbplayer.vertOriginal[2].x = player.vertOriginal[4];
+	obbplayer.vertOriginal[2].y = player.vertOriginal[5];
 
-	obbplayer.vertOriginal[3].x = 2;
-	obbplayer.vertOriginal[3].y = -2;
+	obbplayer.vertOriginal[3].x = player.vertOriginal[6];
+	obbplayer.vertOriginal[3].y = player.vertOriginal[7];
 
-	policeobb.vertOriginal[0].x = -0.5;
-	policeobb.vertOriginal[0].y = 0.5;
+	policeobb.vertOriginal[0].x = police1.vertOriginal[0];
+	policeobb.vertOriginal[0].y = police1.vertOriginal[1];
 
-	policeobb.vertOriginal[1].x = -0.5;
-	policeobb.vertOriginal[1].y = 1.5;
+	policeobb.vertOriginal[1].x = police1.vertOriginal[2];
+	policeobb.vertOriginal[1].y = police1.vertOriginal[3];
 
-	policeobb.vertOriginal[2].x = 0.5;
-	policeobb.vertOriginal[2].y = 1.5;
+	policeobb.vertOriginal[2].x = police1.vertOriginal[4];
+	policeobb.vertOriginal[2].y = police1.vertOriginal[5];
 
-	policeobb.vertOriginal[3].x = 0.5;
-	policeobb.vertOriginal[3].y = 0.5;
+	policeobb.vertOriginal[3].x = police1.vertOriginal[6];
+	policeobb.vertOriginal[3].y = police1.vertOriginal[7];
 
-	policeobbBack.vertOriginal[0].x = -0.5;
-	policeobbBack.vertOriginal[0].y = -1.5;
+	policeobbBack.vertOriginal[0].x = police1.vertOriginalb[0];
+	policeobbBack.vertOriginal[0].y = police1.vertOriginalb[1];
 
-	policeobbBack.vertOriginal[1].x = -0.5;
-	policeobbBack.vertOriginal[1].y = -0.5;
+	policeobbBack.vertOriginal[1].x = police1.vertOriginalb[2];
+	policeobbBack.vertOriginal[1].y = police1.vertOriginalb[3];
 
-	policeobbBack.vertOriginal[2].x = 0.5;
-	policeobbBack.vertOriginal[2].y = -0.5;
+	policeobbBack.vertOriginal[2].x = police1.vertOriginalb[4];
+	policeobbBack.vertOriginal[2].y = police1.vertOriginalb[5];
 
-	policeobbBack.vertOriginal[3].x = 0.5;
-	policeobbBack.vertOriginal[3].y = -1.5;
+	policeobbBack.vertOriginal[3].x = police1.vertOriginalb[6];
+	policeobbBack.vertOriginal[3].y = police1.vertOriginalb[7];
 }
 
 
@@ -126,56 +127,24 @@ void collisionDetection(OBB obb1, OBB obb2, float mat1[16], float mat2[16] )
 
 	obb2.drawOBB();
 }
-void drawCar(GLuint tex)
+void draw(float i, float e, float z, GLuint tex)
 {
 	glLoadIdentity();
 	glPushMatrix();
 	glEnable(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D, tex);
 	glColor3f(1.0, 1.0, 1.0);
-	glTranslatef(player.x, player.y, 0);
-	glRotatef(player.a, 0.0, 0.0, 1.0);
-	glGetFloatv(GL_MODELVIEW_MATRIX, playerMatrix);
-	glBegin(GL_POLYGON);
-	glTexCoord2f(0.0, 0.0); glVertex2f(-2, -2);
-	glTexCoord2f(0.0, 1.0); glVertex2f(-2, 2);
-	glTexCoord2f(1.0, 1.0); glVertex2f(2, 2);
-	glTexCoord2f(1.0, 0.0); glVertex2f(2, -2);
-	glEnd();
-	glDisable(GL_TEXTURE_2D);
-	glPopMatrix();
-	
-}
 
-void drawPolice(GLuint tex)
-{
-	glLoadIdentity();
-	glPushMatrix();
-	glEnable(GL_TEXTURE_2D);
-	glBindTexture(GL_TEXTURE_2D, tex);
-	glColor3f(1.0, 1.0, 1.0);
-	glTranslatef(police1.getX()+7, police1.getY()+7, 0);
-	glRotatef(police1.getA(), 0.0, 0.0, 1.0);
-	glGetFloatv(GL_MODELVIEW_MATRIX, policeMatrix);
-	glBegin(GL_POLYGON);
-	glTexCoord2f(0.0, 0.0); glVertex2f(-2, -2);
-	glTexCoord2f(0.0, 1.0); glVertex2f(-2, 2);
-	glTexCoord2f(1.0, 1.0); glVertex2f(2, 2);
-	glTexCoord2f(1.0, 0.0); glVertex2f(2, -2);
-	glEnd();
-	glDisable(GL_TEXTURE_2D);
-	glPopMatrix();
-	glFlush();
-	
-}
-
-
-void drawMap(int i, int e, GLuint tex)
-{
-	glLoadIdentity();
-	glPushMatrix();
-	glEnable(GL_TEXTURE_2D);
-	glBindTexture(GL_TEXTURE_2D, tex);
+	if (tex == policeTexB || tex == policeTexR) {
+		glTranslatef(police1.getX() + 7, police1.getY() + 7, 0);
+		glRotatef(police1.getA(), 0.0, 0.0, 1.0);
+		glGetFloatv(GL_MODELVIEW_MATRIX, policeMatrix);
+	}
+	if (tex == playerCar) {
+		glTranslatef(player.x, player.y, 0);
+		glRotatef(player.a, 0.0, 0.0, 1.0);
+		glGetFloatv(GL_MODELVIEW_MATRIX, playerMatrix);
+	}
 	if (tex == roofTex) {
 		Buildings.vertOriginal[0].x = i * 5;
 		Buildings.vertOriginal[0].y = e * 5;
@@ -188,23 +157,22 @@ void drawMap(int i, int e, GLuint tex)
 
 		Buildings.vertOriginal[3].x = i * 5 + 5;
 		Buildings.vertOriginal[3].y = e * 5;
+		glGetFloatv(GL_MODELVIEW_MATRIX, buildingMatrix);
+		
 	}
-	glGetFloatv(GL_MODELVIEW_MATRIX, buildingMatrix);
-	glColor3f(1.0, 1.0, 1.0);
+
 	glBegin(GL_POLYGON);
-	glTexCoord2f(0.0, 0.0); glVertex2f(i*5, e*5);
-	glTexCoord2f(0.0, 1.0); glVertex2f(i * 5, e * 5 + 5);
-	glTexCoord2f(1.0, 1.0); glVertex2f(i * 5 + 5, e * 5 + 5);
-	glTexCoord2f(1.0, 0.0); glVertex2f(i * 5 + 5, e * 5);
-	
+
+	glTexCoord2f(0.0, 0.0); glVertex2f(i * 5, e * z);
+	glTexCoord2f(0.0, 1.0); glVertex2f(i * 5, e * 5 + z);
+	glTexCoord2f(1.0, 1.0); glVertex2f(i * 5 + z, e * 5 + z);
+	glTexCoord2f(1.0, 0.0); glVertex2f(i * 5 + z, e * 5);
+
 	glEnd();
 	glDisable(GL_TEXTURE_2D);
 	glPopMatrix();
-
-	collisionDetection(Buildings, obbplayer, buildingMatrix, playerMatrix);
-	
-	
 	glFlush();
+	collisionDetection(Buildings, obbplayer, buildingMatrix, playerMatrix);
 }
 void camera()
 {
@@ -224,33 +192,30 @@ void display(){
 				//draw(i,e, roadVer);
 			}
 			if (map.mapCoor[i][e] == 1) {
-				drawMap(i, e, roofTex);
+				draw(i, e, 5, roofTex);
 				collisionDetection(policeobb, Buildings, policeMatrix, buildingMatrix);
 			}
 			if (map.mapCoor[i][e] == 2) {
-				drawMap(i, e, roadHor);
+				draw(i, e, 5, roadHor);
 			}
 			if (map.mapCoor[i][e] == 3) {
-				drawMap(i, e, roadVer);
+				draw(i, e, 5, roadVer);
 			}
 			if (map.mapCoor[i][e] == 4) {
-				drawMap(i, e, roofTex);
+				draw(i, e, 5, roofTex);
 				collisionDetection(policeobbBack, Buildings, policeMatrix, buildingMatrix);
 			}
 
 			
 		}
 	}
-	
-	drawCar(playerCar);
+	draw(-0.4, -0.4, 4, playerCar);
 	if (police1.siren) {
-		drawPolice(policeTexB);
+		draw(-0.4, -0.4, 4, policeTexB);
 	}
 	else {
-		drawPolice(policeTexR);
+		draw(-0.4, -0.4, 4, policeTexR);
 	}
-
-	
 	police1.updateCar();
 	police1.accelerate();
 	player.updateCar();

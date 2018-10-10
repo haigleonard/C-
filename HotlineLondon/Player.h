@@ -4,6 +4,7 @@ const double PI = 3.1415926535897932384626433832795;
 class Player
 {
 public:
+	float vertOriginal[8] = { -2, -2, -2, 2, 2, 2, 2, -2 };
 	float x = 0;
 	float y = 0;
 	float Vtri = 0;

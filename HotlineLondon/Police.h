@@ -5,6 +5,8 @@
 class Police
 {
 public:
+	float vertOriginal[8] = { -0.5, 0.5, -0.5, 1.5, 0.5, 1.5, 0.5, 0.5 };
+	float vertOriginalb[8] = { -0.5, -1.5, -0.5, -0.5, 0.5, -0.5, 0.5, -1.5 };
 	Police();
 	~Police();
 	const double PI = 3.1415926535897932384626433832795;
