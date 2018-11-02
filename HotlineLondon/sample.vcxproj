@@ -11,19 +11,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Car.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="OBB.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Police.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Haig%27s work\Graphics\labsheet4OpenGL\labsheet4OpenGL\collisiondetection\Image_Loading\glew.h" />
     <ClInclude Include="..\..\..\..\..\Haig%27s work\Graphics\labsheet4OpenGL\labsheet4OpenGL\collisiondetection\Image_Loading\nvImage.h" />
+    <ClInclude Include="Car.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="OBB.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="Police.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{797EB91C-0B55-4A4C-A841-E660F49877DD}</ProjectGuid>

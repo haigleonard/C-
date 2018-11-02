@@ -9,12 +9,11 @@
 #include <time.h>
 #include <MMSystem.h>
 #include "Map.h"
-#include "Player.h"
 #include "OBB.h"
-#include "Police.h"
-Police police1;
+#include "Car.h"
+PoliceCar police1;
 Map map;
-Player player;
+PlayerCar player;
 OBB obbplayer, Buildings, policeobb, policeobbBack;
 GLuint roadHor, roadVer, roofTex, playerCar, policeTexB, policeTexR;
 int	mouse_x=0, mouse_y=0;
@@ -57,6 +56,7 @@ GLuint loadPNG(char* name)
 
 void init()
 {
+	player.setLoc(); police1.setLoc();
 	roadHor = loadPNG("road.png");
 	roadVer = loadPNG("road2.png");
 	roofTex = loadPNG("roof.png");
@@ -119,6 +119,11 @@ void collisionDetection(OBB obb1, OBB obb2, float mat1[16], float mat2[16] )
 			}
 			glColor3f(0.0, 0.0, 1.0);
 		}
+		if (obb1.idString == "Player") {
+			player.stop();
+			
+			//glColor3f(0.0, 0.0, 0.0);
+		}
 	}
 	else {
 		glColor3f(1.0, 0.0, 1.0);
@@ -136,8 +141,8 @@ void draw(float i, float e, float z, GLuint tex)
 	glColor3f(1.0, 1.0, 1.0);
 
 	if (tex == policeTexB || tex == policeTexR) {
-		glTranslatef(police1.getX() + 7, police1.getY() + 7, 0);
-		glRotatef(police1.getA(), 0.0, 0.0, 1.0);
+		glTranslatef(police1.x + 7, police1.y + 7, 0);
+		glRotatef(police1.a, 0.0, 0.0, 1.0);
 		glGetFloatv(GL_MODELVIEW_MATRIX, policeMatrix);
 	}
 	if (tex == playerCar) {
@@ -163,7 +168,7 @@ void draw(float i, float e, float z, GLuint tex)
 
 	glBegin(GL_POLYGON);
 
-	glTexCoord2f(0.0, 0.0); glVertex2f(i * 5, e * z);
+	glTexCoord2f(0.0, 0.0); glVertex2f(i * 5, e * 5);
 	glTexCoord2f(0.0, 1.0); glVertex2f(i * 5, e * 5 + z);
 	glTexCoord2f(1.0, 1.0); glVertex2f(i * 5 + z, e * 5 + z);
 	glTexCoord2f(1.0, 0.0); glVertex2f(i * 5 + z, e * 5);
@@ -172,7 +177,7 @@ void draw(float i, float e, float z, GLuint tex)
 	glDisable(GL_TEXTURE_2D);
 	glPopMatrix();
 	glFlush();
-	collisionDetection(Buildings, obbplayer, buildingMatrix, playerMatrix);
+	collisionDetection(obbplayer, Buildings,  playerMatrix, buildingMatrix );
 }
 void camera()
 {
@@ -202,21 +207,22 @@ void display(){
 				draw(i, e, 5, roadVer);
 			}
 			if (map.mapCoor[i][e] == 4) {
-				draw(i, e, 5, roofTex);
+				draw(i, e, 5, roadVer);
 				collisionDetection(policeobbBack, Buildings, policeMatrix, buildingMatrix);
 			}
 
 			
 		}
 	}
-	draw(-0.4, -0.4, 4, playerCar);
+	draw(player.width, player.height, 2, playerCar);
 	if (police1.siren) {
-		draw(-0.4, -0.4, 4, policeTexB);
+		draw(police1.width, police1.height, 4, policeTexB);
 	}
 	else {
-		draw(-0.4, -0.4, 4, policeTexR);
+		draw(police1.width, police1.height, 4, policeTexR);
 	}
 	police1.updateCar();
+	police1.updateSiren();
 	police1.accelerate();
 	player.updateCar();
 	glFlush();

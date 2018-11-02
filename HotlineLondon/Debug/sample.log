@@ -1,25 +1,18 @@
-﻿  Main.cpp
-g:\computer science\github\c++\c--\hotlinelondon\map.h(52): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\player.h(17): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\player.h(18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\player.h(24): warning C4305: '+=': truncation from 'double' to 'float'
-g:\computer science\github\c++\c--\hotlinelondon\player.h(30): warning C4305: '-=': truncation from 'double' to 'float'
-g:\computer science\github\c++\c--\hotlinelondon\player.h(36): warning C4305: '-=': truncation from 'double' to 'float'
-g:\computer science\github\c++\c--\hotlinelondon\player.h(41): warning C4305: '-=': truncation from 'double' to 'float'
-g:\computer science\github\c++\c--\hotlinelondon\police.h(23): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\police.h(24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\police.h(42): warning C4305: '+=': truncation from 'double' to 'float'
-g:\computer science\github\c++\c--\hotlinelondon\police.h(48): warning C4305: '-=': truncation from 'double' to 'float'
-g:\computer science\github\c++\c--\hotlinelondon\police.h(54): warning C4305: '-=': truncation from 'double' to 'float'
-g:\computer science\github\c++\c--\hotlinelondon\police.h(59): warning C4305: '-=': truncation from 'double' to 'float'
-g:\computer science\github\c++\c--\hotlinelondon\police.h(84): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\police.h(87): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\police.h(88): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\main.cpp(200): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\main.cpp(204): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\main.cpp(207): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\main.cpp(210): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-g:\computer science\github\c++\c--\hotlinelondon\main.cpp(217): warning C4305: 'argument': truncation from 'double' to 'float'
-g:\computer science\github\c++\c--\hotlinelondon\main.cpp(219): warning C4305: 'argument': truncation from 'double' to 'float'
-g:\computer science\github\c++\c--\hotlinelondon\main.cpp(222): warning C4305: 'argument': truncation from 'double' to 'float'
+﻿  Car.cpp
+g:\computer science\github\c++\c--\hotlinelondon\car.h(16): warning C4305: 'initializing': truncation from 'double' to 'float'
+g:\computer science\github\c++\c--\hotlinelondon\car.h(17): warning C4305: 'initializing': truncation from 'double' to 'float'
+g:\computer science\github\c++\c--\hotlinelondon\car.h(20): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+g:\computer science\github\c++\c--\hotlinelondon\car.h(21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+g:\computer science\github\c++\c--\hotlinelondon\car.h(27): warning C4305: '+=': truncation from 'double' to 'float'
+g:\computer science\github\c++\c--\hotlinelondon\car.h(33): warning C4305: '-=': truncation from 'double' to 'float'
+g:\computer science\github\c++\c--\hotlinelondon\car.h(39): warning C4305: '-=': truncation from 'double' to 'float'
+g:\computer science\github\c++\c--\hotlinelondon\car.h(44): warning C4305: '-=': truncation from 'double' to 'float'
+g:\computer science\github\c++\c--\hotlinelondon\car.h(48): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+g:\computer science\github\c++\c--\hotlinelondon\car.h(49): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+g:\computer science\github\c++\c--\hotlinelondon\car.h(104): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+g:\computer science\github\c++\c--\hotlinelondon\car.h(107): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+g:\computer science\github\c++\c--\hotlinelondon\car.h(108): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Main.cpp
   sample.vcxproj -> G:\Computer Science\GitHub\C++\C--\HotlineLondon\Debug\sample.exe
