@@ -42,3 +42,16 @@ std::pair<std::string, int> Artist::getLongestAlbum()
 	return std::pair <std::string, int> (albumName, greatest);
 }
 
+std::pair<std::string, int> Artist::longestTrack()
+{
+	int seconds = 0;
+	std::string song;
+	for (const auto a : albums) {
+		if (a->longestTrack().second.getLength() > seconds) {
+			seconds = a->longestTrack().second.getLength();
+			song = a->longestTrack().first;
+		}
+
+	}
+	return std::pair <std::string, int>(song, seconds);
+}

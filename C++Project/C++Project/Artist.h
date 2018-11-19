@@ -24,6 +24,7 @@ public:
 	void addAlbum(std::string n);
 	void addSong(std::string, std::string, int, int, int);
 	std::pair<std::string, int> getLongestAlbum();
+	std::pair<std::string, int> longestTrack();
 	bool operator<(const Artist& p) const
 	{
 		return name < p.name; // order by name

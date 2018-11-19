@@ -24,3 +24,17 @@ int Album::getTrackCount()
 {
 	return noOftracks;
 }
+
+std::pair<std::string, Duration> Album::longestTrack()
+{
+	std::string song;
+	Duration *d = new Duration(0,0,0);
+	for (const auto s : songs) {
+		if (*d < *s->d) {
+			*d = *s->d;
+			song = s->getName();
+		}
+
+	}
+	return std::pair <std::string, Duration>(song, *d);
+}

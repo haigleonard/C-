@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <algorithm>
 #include "Song.h"
 #include "Duration.h"
 class Album
@@ -21,5 +22,6 @@ public:
 	void addSong(std::string, int, int, int);
 	int getTrackCount();
 	Song lastSong() { return *songs.at(songs.size()-1); };
+	std::pair<std::string, Duration> longestTrack();
 };
 
