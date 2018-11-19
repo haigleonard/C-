@@ -6,7 +6,7 @@ void Artist::print()
 	for (int i = 0; i < albums.size(); i++) {
 		albums.at(i)->print();
 	}
-	cout << name << " total artist runtime: "; d.print();
+	cout << name << " total artist runtime: "; d->print();
 }
 
 
@@ -24,6 +24,21 @@ void Artist::addSong(std::string a, std::string n, int h, int m, int s)
 	{
 		auto index = std::distance(albums.begin(), it);
 		albums.at(index)->addSong(n, h, m, s);
+		*d = *d + *albums.at(index)->lastSong().d;
 	}
-	d.add(h, m, s);
 }
+
+std::pair<std::string, int> Artist::getLongestAlbum()
+{
+	int greatest = 0;
+	std::string albumName;
+	for (int i = 0; i < albums.size(); i++) {
+		if (albums.at(i)->getTrackCount() > greatest)
+		{
+			greatest = albums.at(i)->getTrackCount();
+			albumName = albums.at(i)->getName();
+		}
+	}
+	return std::pair <std::string, int> (albumName, greatest);
+}
+

@@ -11,11 +11,16 @@ void Album::print()
 	for (int i = 0; i < songs.size(); i++) {
 		songs.at(i)->print();
 	}
-	cout << name << " total album runtime: "; d.print();
+	cout << name << " total album runtime: "; d->print();
 }
 void Album::addSong(std::string n, int h, int m, int s)
 {
-	song = new Song(n);
+	song = new Song(n, h, m , s);
+	*d = *d + *song->d;
 	songs.push_back(song);
-	d.add(h,m,s);
+	noOftracks++;
+}
+int Album::getTrackCount()
+{
+	return noOftracks;
 }
